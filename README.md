@@ -5,7 +5,7 @@ What I want: a high level language for describing algorithms which:
   1. can be automatically converted to C (or some other fast language),
   2. separates algorithmic logic from the data model
 
-See the motivating-examples subdirectory
+See the [motivating-examples](./motivating-examples/README.md) subdirectory
 
 # Dedication
 [Margaret Dayhoff](https://en.wikipedia.org/wiki/Margaret_Oakley_Dayhoff)
