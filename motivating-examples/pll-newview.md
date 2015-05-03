@@ -41,11 +41,11 @@ PLL's
 if you fed the interpreter some description of how the data should be laid out in the argument.
 
 The interpreter should be able to infer from newview the following:
-  *  PLL_TIP_INNER, PLL_INNER_INNER: compile-time constants with == semantics
-  * PLL_MINUSMINLIKELIHOOD, PLL_MINLIKELIHOOD, PLL_TWOTOTHE256: compile time numbers, PLL_MINUSMINLIKELIHOOD < PLL_MINLIKELIHOOD
-  * vl and vr: read-only, integer-indexable collections of numbers of used_size >= num_states
-  * `tip_case`: read-only scalar. => bool (in [PLL_TIP_INNER, PLL_INNER_INNER])
-  * `le`, `ri`, `extEV`: read-only, 2D-integer -indexable collections of numbers used_size = num_states by num_states
+  * `PLL_TIP_INNER`, `PLL_INNER_INNER`: compile-time constants with == semantics
+  * `PLL_MINUSMINLIKELIHOOD`, `PLL_MINLIKELIHOOD`, `PLL_TWOTOTHE256`: compile time numbers, `PLL_MINUSMINLIKELIHOOD` < `PLL_MINLIKELIHOOD`
+  * `vl` and `vr`: read-only, integer-indexable collections of numbers of `used_size` >= `num_states`
+  * `tip_case`: read-only scalar. => bool (in [`PLL_TIP_INNER`, `PLL_INNER_INNER`])
+  * `le`, `ri`, `extEV`: read-only, 2D-integer -indexable collections of numbers `used_size` = `num_states` by `num_states`
   * `x1` and `x2`: numbers local to first for-loop
   *  `v` output (explicitly stated) overwritten.) integer-indexable collections of numbers of used_size >= num_states if tip_case in [PLL_TIP_INNER, PLL_INNER_INNER]
   * `fast_scaling`: read-only boolean
